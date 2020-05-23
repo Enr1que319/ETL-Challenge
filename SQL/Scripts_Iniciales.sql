@@ -1,18 +1,18 @@
 CREATE TABLE public.cat_genres (
-	id int NULL,
+	id SERIAL NOT NULL,
 	name varchar NULL,
 	CONSTRAINT cat_genres_pk PRIMARY KEY (id)
 );
 
 CREATE TABLE public.cat_original_language (
-	id int NULL,
-	"Name" varchar NULL,
+	id SERIAL NOT NULL,
+	name varchar NULL,
 	CONSTRAINT cat_original_language_pk PRIMARY KEY (id)
 );
 
 CREATE TABLE public.cat_production_companies (
-	id int4 NOT NULL,
-	"Name" varchar NULL,
+	id SERIAL NOT NULL,
+	name varchar NULL,
 	CONSTRAINT cat_production_companies_pk PRIMARY KEY (id)
 );
 
