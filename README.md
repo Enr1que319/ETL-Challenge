@@ -21,6 +21,19 @@ Four catalogue tables were created which are: cat_genres, cat_original_language,
 
 ## Tools and Languajes
 
+The following tools were used to aply the ETL techniques:
+
++ Python
+	+ pandas
+	+ os
+	+ numpy
+	+ requests
+	+ json
+	+ sqlalchemy
++ SQL
+	+ PostrgreSQL
+	
+
 
 
 
