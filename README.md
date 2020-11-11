@@ -1,16 +1,25 @@
 # ETL-Challenge
 
-Project Report
-For this project we are searching/scraping different file which will provide us with certain information about movies and the platforms they are streamed in, the idea is to transform this information in order to create 3 datasets that will be used to analyze different aspects between the movies and the platforms.
-Extract: we used five .CSV files downloaded from Kaggle and the OMDB API’s which are:
+[![](img/etl.png)]()    
 
-	http://www.omdbapi.com/
-	AllMoviesDetailsCleaned.csv
-	IMDb_movies.csv
-	Movies_metadata.csv
-	Netflix_titles.csv
-	Rotten_tomatoes_top_movies_2019-01-15.csv
+## Introduction
 
-Transform: the data was transformed by cleaning it up from NaN values and columns that we did not consider relevant, joining or merging different files to complete the datasets, separate values from columns and aggregating them into new ones. 
+This project was created to aply ETL techiques to different datasets. The data was provided from different sources (Kaggle and the OMDB API’s):
 
-We decided to create 4 catalogue tables which are: cat_genres, cat_original_language, cat_production_companies, and movies_details and a single detailed table called movies_db with the tool PostgreSQL.
+- http://www.omdbapi.com/
+- AllMoviesDetailsCleaned.csv
+- IMDb_movies.csv
+- Movies_metadata.csv
+- Netflix_titles.csv
+- Rotten_tomatoes_top_movies_2019-01-15.csv
+
+First the DATA was extracted from the aforementioned sources, this was downloading the information directly in csv format and also making requests to the apis to obtain the data, after that the information was processed, cleaned and deleting NaN values and columns that weren't considered relevant, joining or merging different files to complete the datasets, separating values from columns and aggregating them into new ones, the columns were created according to the scheme that was planned,  this scheme was designed so that in the future the information can be analyzed, once this step was finished, the information was loaded into a relational database (PostgreSQL) in multiple tables.
+
+Four catalogue tables were created which are: cat_genres, cat_original_language, cat_production_companies, and movies_details and a single detailed table called movies_db.
+
+## Tools and Languajes
+
+
+
+
+
