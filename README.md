@@ -32,7 +32,13 @@ The following tools were used to aply the ETL techniques:
 	+ sqlalchemy
 + SQL
 	+ PostrgreSQL
-	
+
+
+## Schema
+
+Here you can see the database schema.
+
+[![](img/schema.png)]()  
 
 
 
